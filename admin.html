@@ -167,12 +167,13 @@
             <header
                 style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; background: transparent; position: relative; border: none;">
                 <h1>Ürün Yönetimi</h1>
-                <button onclick="toggleForm('productForm')" class="btn-primary"><i class="fas fa-plus"></i> Yeni Ürün
+                <button onclick="prepareAdd()" class="btn-primary"><i class="fas fa-plus"></i> Yeni Ürün
                     Ekle</button>
             </header>
 
             <div id="productForm" class="dashboard-card" style="display: none;">
-                <h3 style="margin-bottom: 1.5rem;">Ürün Detayları</h3>
+                <h3 id="formTitle" style="margin-bottom: 1.5rem;">Ürün Detayları</h3>
+                <input type="hidden" id="editIndex" value="-1">
                 <div class="form-grid">
                     <div class="form-group">
                         <label>Ürün Adı</label>
@@ -197,7 +198,7 @@
                     </div>
                 </div>
                 <div style="margin-top: 2rem; display: flex; gap: 1rem;">
-                    <button onclick="addProduct()" class="btn-primary">Kaydet</button>
+                    <button id="saveBtn" onclick="saveProduct()" class="btn-primary">Kaydet</button>
                     <button onclick="toggleForm('productForm')" class="btn-reject">Vazgeç</button>
                 </div>
             </div>
@@ -343,6 +344,7 @@
                     <td>₺${parseFloat(p.price).toLocaleString('tr-TR')}</td>
                     <td>${p.featured ? '<span style="color:var(--accent-gold)"><i class="fas fa-star"></i> Öne Çıkan</span>' : 'Standart'}</td>
                     <td>
+                        <button onclick="editItem(${index})" class="btn-primary" style="padding: 5px 10px; margin-right: 5px;"><i class="fas fa-edit"></i></button>
                         <button onclick="deleteItem('products', ${index})" class="btn-delete"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
@@ -372,21 +374,60 @@
             form.style.display = form.style.display === 'none' ? 'block' : 'none';
         }
 
-        const addProduct = () => {
-            const newProduct = {
-                id: Date.now(),
+        const prepareAdd = () => {
+            document.getElementById('formTitle').innerText = 'Yeni Ürün Ekle';
+            document.getElementById('editIndex').value = '-1';
+            document.getElementById('pName').value = '';
+            document.getElementById('pPrice').value = '';
+            document.getElementById('pImage').value = '';
+            document.getElementById('pFeatured').checked = false;
+            toggleForm('productForm');
+        }
+
+        const editItem = (index) => {
+            const p = products[index];
+            document.getElementById('formTitle').innerText = 'Ürünü Düzenle';
+            document.getElementById('editIndex').value = index;
+            document.getElementById('pName').value = p.name;
+            document.getElementById('pPrice').value = p.price;
+            document.getElementById('pCategory').value = p.category;
+            document.getElementById('pImage').value = p.image;
+            document.getElementById('pFeatured').checked = p.featured;
+
+            if (document.getElementById('productForm').style.display === 'none') {
+                toggleForm('productForm');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        const saveProduct = () => {
+            const index = parseInt(document.getElementById('editIndex').value);
+            const productData = {
                 name: document.getElementById('pName').value,
                 price: document.getElementById('pPrice').value,
                 category: document.getElementById('pCategory').value,
                 image: document.getElementById('pImage').value || 'https://placehold.co/400x300?text=No+Image',
                 featured: document.getElementById('pFeatured').checked,
-                description: ""
+                description: index === -1 ? "" : products[index].description
             };
-            if (!newProduct.name || !newProduct.price) return alert('Lütfen zorunlu alanları doldurun.');
-            products.push(newProduct);
+
+            if (!productData.name || !productData.price) return alert('Lütfen zorunlu alanları doldurun.');
+
+            if (index === -1) {
+                // Add new
+                productData.id = Date.now();
+                products.push(productData);
+                alert('Ürün listeye eklendi.');
+            } else {
+                // Update existing
+                productData.id = products[index].id;
+                products[index] = productData;
+                alert('Ürün güncellendi.');
+            }
+
             renderProductTable();
             toggleForm('productForm');
-            alert('Ürün listeye eklendi. "Sunucuya Kaydet" butonuna basmayı unutmayın.');
+            alert('"Sunucuya Kaydet" butonuna basmayı unutmayın.');
         }
 
         const addCategory = () => {
