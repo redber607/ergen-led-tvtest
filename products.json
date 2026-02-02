@@ -1,65 +1,794 @@
-[
+﻿[
     {
-        "id": 1,
-        "name": "LG 42\" Led Bar Takımı",
-        "category": "muhtelif",
-        "price": "850.00",
-        "image": "assets/images/products/led_bar.png",
-        "featured": true,
-        "description": "Garantili ve orijinal Led Bar takımı."
+        "id":  100,
+        "name":  "Sunny SN049DLD12AT050 12AT050 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a037a-1.png",
+        "featured":  false,
+        "description":  "49 inç 12AT050 ANAKART"
     },
     {
-        "id": 2,
-        "name": "Samsung UE55 Anakart",
-        "category": "anakart",
-        "price": "2450.00",
-        "image": "assets/images/products/mainboard.png",
-        "featured": true,
-        "description": "Smart TV uyumlu orijinal anakart."
+        "id":  101,
+        "name":  "Sunny Axen 16AT017 40-43 V1.0 Mnl Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/c004a.png",
+        "featured":  false,
+        "description":  "40-43inc 16AT017 40-43 V1.0 MNL ANAKART"
     },
     {
-        "id": 3,
-        "name": "Vestel 17IPS Besleme Kartı",
-        "category": "besleme",
-        "price": "750.00",
-        "image": "assets/images/products/power_board.png",
-        "featured": true,
-        "description": "Sık arıza yapan modeller için güçlendirilmiş versiyon."
+        "id":  102,
+        "name":  "Axen Led Tv Anakart ax049dld16at018 16at018 v1.1 Mnl",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksu024a.png",
+        "featured":  false,
+        "description":  "49İNC AX049DLD16AT018 16AT018 V1.1 MNL ANAKART"
     },
     {
-        "id": 4,
-        "name": "LG 42\" Smart Anakart",
-        "category": "anakart",
-        "price": "1850.00",
-        "image": "assets/images/products/mainboard.png",
-        "featured": false,
-        "description": "Tüm LG 42 serisi ile uyumlu."
+        "id":  103,
+        "name":  "Redline Led Tv Yedek Anakart 50ex7550 Tp.v56.PC821 t500hvn09.0-n2",
+        "category":  "anakart",
+        "price":  "1800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a070a.png",
+        "featured":  false,
+        "description":  "50INC 50EX7550 TP.V56.PC821 T500HVN09.0-N2 ANAKART"
     },
     {
-        "id": 5,
-        "name": "Philips 50\" PSU Kart",
-        "category": "besleme",
-        "price": "950.00",
-        "image": "assets/images/products/power_board.png",
-        "featured": false,
-        "description": "Yüksek voltaj korumalı güç kartı."
+        "id":  104,
+        "name":  "Axen AX043DLD12AT075 12AT075 Anakart LC430DUY-SHA1",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a073a-1.png",
+        "featured":  false,
+        "description":  "43INC AX043DLD12AT075 12AT075 ANAKART LC430DUY-SHA1"
     },
     {
-        "id": 6,
-        "name": "AUO T-Con Modül",
-        "category": "tcon",
-        "price": "450.00",
-        "image": "assets/images/products/mainboard.png",
-        "featured": false,
-        "description": "Ekran dikey çizgi arızaları için çözüm."
+        "id":  105,
+        "name":  "Sunny SN032LM23-T1 T.MT8223.3B 10234  LTA320AP02 Anakart",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksu023a-1.png",
+        "featured":  false,
+        "description":  "SN032LM23-T1 T.MT8223.3B 10234 LTA320AP02"
     },
     {
-        "id": 7,
-        "name": "Üniversal Led Bar",
-        "category": "muhtelif",
-        "price": "350.00",
-        "image": "assets/images/products/led_bar.png",
-        "featured": false,
-        "description": "Her modele kesilerek uyarlanabilir."
+        "id":  106,
+        "name":  "Sanyo LE127S15FM T.VST59S.81 V500HJ1-PE8 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a068a-1.png",
+        "featured":  false,
+        "description":  "50INC LE127S15FM T.VST59S.81 V500HJ1-PE8 ANAKART"
+    },
+    {
+        "id":  107,
+        "name":  "Premier PR49L91  TSUMV59-T8B 4704-MV59T8-A3233K01 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksu004a.png",
+        "featured":  false,
+        "description":  "49INC PREMİER PR49L91 TSUMV59-T8B 4704-MV59T8-A3233K01 ANAKART"
+    },
+    {
+        "id":  108,
+        "name":  "Sanyo LE127S15FM T.VST59S.81 V500HJ1-PE8",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksu011a-1.png",
+        "featured":  false,
+        "description":  "50INC SANYO LE127S15FM T.VST59S.81 V500HJ1-PE8"
+    },
+    {
+        "id":  109,
+        "name":  "Sunny Sn40Dil0938  18at009ttv1.0  Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a082a-1.png",
+        "featured":  false,
+        "description":  "40INC SUNNY SN40DİL0938 18AT009TTV1.0 ANAKART (1A082)"
+    },
+    {
+        "id":  110,
+        "name":  "Sunny Sn032L7 Lcd S78 B.TR901G 8363 Anakart",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksu010a-1.png",
+        "featured":  false,
+        "description":  "32INC SUNNY SN032L7 LCD S78 B.TR901G 8363 ANAKART"
+    },
+    {
+        "id":  111,
+        "name":  "Finlux 32fd4041hm 17mb82S 23165185 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a005a-1.png",
+        "featured":  false,
+        "description":  "32 INC FINLUX 32FD4041HM 17MB82S 23165185 ANAKART"
+    },
+    {
+        "id":  112,
+        "name":  "Seg 42se5500 17mb82s 23243384 27748682 Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3b015a-1.png",
+        "featured":  false,
+        "description":  "SEG 42SE5500 17MB82S 23243384 27748682 ANAKART"
+    },
+    {
+        "id":  113,
+        "name":  "Vestel 32vh5906 20539240 17mb45-3 Anakart",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/oa008a.png",
+        "featured":  false,
+        "description":  "32INC 32VH5906 20539240 17MB45-3 ANAKART"
+    },
+    {
+        "id":  114,
+        "name":  "Vestel 32vh3000 17mb45m-2 20487740 Anakart",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/oa008a.png",
+        "featured":  false,
+        "description":  "VESTEL 32VH3000 17MB45M-2 20487740 ANAKART 32 İNC"
+    },
+    {
+        "id":  115,
+        "name":  "Vestel 17mb45m-2 26vh300 20492513 Anakart",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/oa007a-1.png",
+        "featured":  false,
+        "description":  "VESTEL 17MB45M-2 26VH300 20492513 ANAKART 26 İNC"
+    },
+    {
+        "id":  116,
+        "name":  "Vestel 32pf7175 17mb95m 10090469 23200834 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kv007a-1.png",
+        "featured":  false,
+        "description":  "32INC VESTEL 32PF7175 17MB95M 10090469 23200834 ANAKART"
+    },
+    {
+        "id":  117,
+        "name":  "Regal L50f7445s 17mb95m 23216334  Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ves010a-1.png",
+        "featured":  false,
+        "description":  "50inc Regal L50f7445s 17mb95m 23216334 Anakart"
+    },
+    {
+        "id":  118,
+        "name":  "Vestel 42pf7175 23193353 17mb95m Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ves010a-1.png",
+        "featured":  false,
+        "description":  "42inc Vestel 42pf7175 23193353 17mb95m Anakart"
+    },
+    {
+        "id":  119,
+        "name":  "Telefunken 48tf6020 23310173 17mb96 Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ves012a-1.png",
+        "featured":  false,
+        "description":  "48inc Telefunken 48tf6020 23310173 17mb96 Anakart"
+    },
+    {
+        "id":  120,
+        "name":  "Finlux 48fx610f 17mb97 23412699 Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/24013af1a-1.png",
+        "featured":  false,
+        "description":  "48inc Lsc480hn08 Finlux 48fx610f 17mb97 23412699 Anakart"
+    },
+    {
+        "id":  121,
+        "name":  "Seg 40sef5650 17mb97 23456082 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/seg001a.png",
+        "featured":  false,
+        "description":  "40inc Seg 40sef5650 17mb97 23456082 Anakart"
+    },
+    {
+        "id":  122,
+        "name":  "Vestel 32pf6013 17mb62-2.6 10078110 23062871 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a036a-1.png",
+        "featured":  false,
+        "description":  "32inc Vestel 32pf6013 17mb62-2.6 10078110 23062871 Anakart"
+    },
+    {
+        "id":  123,
+        "name":  "Vestel 55ud8400 17mb130p 23489078 Anakart",
+        "category":  "anakart",
+        "price":  "1600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ves013a.png",
+        "featured":  false,
+        "description":  "55inc Vestel 55ud8400 17mb130p 23489078 Anakart"
+    },
+    {
+        "id":  124,
+        "name":  "Seg 40sc5600 17mb140 10111627 279002810946  23427345 27900281 Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kv005a-1.png",
+        "featured":  false,
+        "description":  "40 incSeg 40sc5600 17mb140 10111627 279002810946 23427345 27900281 Anakart"
+    },
+    {
+        "id":  125,
+        "name":  "Vestel 48fd5400 17mb140 10111326 23435784  Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kv005a-1.png",
+        "featured":  false,
+        "description":  "48inc Vestel 48fd5400 17mb140 10111326 23435784 Anakart"
+    },
+    {
+        "id":  126,
+        "name":  "Vestel 43pf9090 17mb90-3  23179141 Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kv013a-1.png",
+        "featured":  false,
+        "description":  "43inc Vestel 43pf9090 17mb90-3 23179141 Anakart ( Eprom Tadilatlı)"
+    },
+    {
+        "id":  127,
+        "name":  "Vestel Anakart 47pf9090 17mb91-2",
+        "category":  "anakart",
+        "price":  "1500",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a063a-1.png",
+        "featured":  false,
+        "description":  "47inc Vestel 47pf9090 17mb91-2  (lc470eue Panel) Anakart"
+    },
+    {
+        "id":  128,
+        "name":  "Vestel 49ua8900 23330770 17mb120 Anakart",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a043a.png",
+        "featured":  false,
+        "description":  "49inc Vestel 49ua8900 23330770 17mb120 Anakart"
+    },
+    {
+        "id":  129,
+        "name":  "Vestel 49ud9650 17mb120 23430812 Anakart",
+        "category":  "anakart",
+        "price":  "1300",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a043a.png",
+        "featured":  false,
+        "description":  "49inc Vestel 49ud9650 17mb120 23430812 Anakart"
+    },
+    {
+        "id":  130,
+        "name":  "Vestel 42pf8011 23032869 17mb65-2 Anakart",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kv015a-1.png",
+        "featured":  false,
+        "description":  "42inc Vestel 42pf8011 23032869 17mb65-2 Anakart"
+    },
+    {
+        "id":  131,
+        "name":  "Seg Vestel 32855 tft-lcd 17mb25 10062327 20445763 26493297  Anakart",
+        "category":  "anakart",
+        "price":  "700",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a013a-1.png",
+        "featured":  false,
+        "description":  "32inc Seg Vestel 32855 tft-lcd 17mb25 10062327 20445763 26493297 Anakart"
+    },
+    {
+        "id":  132,
+        "name":  "Vestel 32vh3005 17mb35-4 20499585 Anakart",
+        "category":  "anakart",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/oa006a-1.png",
+        "featured":  false,
+        "description":  "32inc Vestel 32vh3005 17mb35-4 20499585 Anakart"
+    },
+    {
+        "id":  133,
+        "name":  "Vestel Millenium 42735 Anakart 17mb22-2",
+        "category":  "anakart",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kv012a-1.png",
+        "featured":  false,
+        "description":  "42inc Vestel Millenium 42735 17mb22-2  Anakart"
+    },
+    {
+        "id":  134,
+        "name":  "Beko b50-Lel-2b Vsf190r-6 Lpu6zz  Anakart",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/be001.png.png",
+        "featured":  false,
+        "description":  "50 incBeko b50-Lel-2b Vsf190r-6 Lpu6zz Anakart"
+    },
+    {
+        "id":  135,
+        "name":  "Beko Led Tv Yedek Anakart a40-Lb-8374 Vsf190r-6 Ltwkzz",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ka008a.png",
+        "featured":  false,
+        "description":  "Beko Led Tv Yedek Anakart a40-Lb-8374 Vsf190r-6 Ltwkzz 40inc"
+    },
+    {
+        "id":  136,
+        "name":  "Arçelik Led Tv Lcd Yedek Anakart  Tv82-203,yvr190r-6,beuyzz",
+        "category":  "anakart",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a004a.png",
+        "featured":  false,
+        "description":  "Arçelik Led Tv Lcd Yedek Anakart 32inc Tv82-203, 3hd ,yvr190r-6, beuyzz\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi ..."
+    },
+    {
+        "id":  137,
+        "name":  "Beko Led Tv Yedek Anakart b40L 4531 0b Vty190r-6 g899zz",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/c003a.png",
+        "featured":  false,
+        "description":  "BekoLed Tv Yedek Anakart b40L 4531 0b Vty190r-6 g899zz 40inc"
+    },
+    {
+        "id":  138,
+        "name":  "Arçelik Anakart a48 lb 5533 vty190r-6 gi8gzz",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3b012a.png",
+        "featured":  false,
+        "description":  "Arçelik Anakart a48 lb 5533 vty190r-6 gi8gzz\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  139,
+        "name":  "Beko Anakart b40-lw-5533 vty190r-6 k3dazz",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3b012a.png",
+        "featured":  false,
+        "description":  "Beko Anakart b40-lw-5533 vty190r-6 k3dazz\n\n\u0026nbsp;\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  140,
+        "name":  "Arçelik Anakart a42-lb-8477 vkt190r-4 mgf8zz",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a027a.png",
+        "featured":  false,
+        "description":  "Arçelik Anakart a42-lb-8477 vkt190r-4 mgf8zz\n\n\u0026nbsp;\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  141,
+        "name":  "Arçelik Anakart a28-lb-5433 vty190r-5 nnn4zz",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a054a.png",
+        "featured":  false,
+        "description":  "Arçelik Anakart a28-lb-5433 vty190r-5 nnn4zz\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  142,
+        "name":  "Arçelik Anakart a32-lb-4310 vut190r-6 ltkizz",
+        "category":  "anakart",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a035a.png",
+        "featured":  false,
+        "description":  "Arçelik Anakart a32-lb-4310 vut190r-6 ltkizz\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  143,
+        "name":  "Arçelik Anakart a32-lem-0bu  vut190r-6 e194zz",
+        "category":  "anakart",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a035a.png",
+        "featured":  false,
+        "description":  "Arçelik Anakart a32-lem-0bu vut190r-6 e194zz\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  144,
+        "name":  "Grundig Anakart g32-lch-0b ytd190r-7 krjbzz",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a029a.png",
+        "featured":  false,
+        "description":  "Grundig Anakart g32-lch-0b ytd190r-7 krjbzz\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  145,
+        "name":  "Arçelik Anakart tv82-203 yrq190r-8 eagbzz",
+        "category":  "anakart",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a043a.png",
+        "featured":  false,
+        "description":  "Arçelik Anakart tv82-203 yrq190r-8 eagbzz (Lg Panel)\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  146,
+        "name":  "Arçelik Anakart tv82-203 yrq190r-8 7mkdzz xzwdzz",
+        "category":  "muhtelif",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a043a.png",
+        "featured":  false,
+        "description":  "Arçelik Anakart tv82-203 yrq190r-8 7mkdzz xzwdzz (Samsung Panel Lta320ap06)\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bi..."
+    },
+    {
+        "id":  147,
+        "name":  "Beko Anakart b32-lb-4310  zu4190r-1 eef6zz",
+        "category":  "anakart",
+        "price":  "600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ka004a.png",
+        "featured":  false,
+        "description":  "Beko Anakart b32-lb-4310 zu4190r-1 eef6zz\n\n\u0026nbsp;\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  148,
+        "name":  "Beko Anakart b46-leg-3b vpz190r-6 kmm5zz",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a038a.png",
+        "featured":  false,
+        "description":  "Beko Anakart b46-leg-3b vpz190r-6 kmm5zz\n\n\u0026nbsp;\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  149,
+        "name":  "Philips Ankakart 42pfl7762d / 12 ssb Lc7.05 313926852501",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a083a.png",
+        "featured":  false,
+        "description":  "Philips Ankakart 42pfl7762d / 12 ssb Lc7.05 313926852501\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  150,
+        "name":  "Philips Anakart 42pfk6309 715g6165-m02-000-005n cbpfd7wbboct",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kp001a.png",
+        "featured":  false,
+        "description":  "Philips Anakart 42pfk6309 715g6165-m02-000-005n cbpfd7wbboct\n\n\u0026nbsp;\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alı..."
+    },
+    {
+        "id":  151,
+        "name":  "Philips Anakart 42pfl5405h/12  3104 313 64027",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a084a.png",
+        "featured":  false,
+        "description":  "Philips Anakart 42pfl5405h/12 3104 313 64027\n\n\u0026nbsp;\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  152,
+        "name":  "Philips Anakart 40pfk4023 715g6094 -m0I-000-004k 704tqepl013",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kp003a.png",
+        "featured":  false,
+        "description":  "Philips Anakart 40pfk4023 715g6094 -m0I-000-004k 704tqepl013"
+    },
+    {
+        "id":  153,
+        "name":  "Philips Anakart 43pus6501 715g7772-m0d-b01-005k 703tqgpl085",
+        "category":  "anakart",
+        "price":  "2500",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a059a.png",
+        "featured":  false,
+        "description":  "Philips Anakart 43pus6501 715g7772-m0d-b01-005k 703tqgpl085\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  154,
+        "name":  "Samsung Anakart Le40d503 bn41-01702a bn94-04845g",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a043a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart Le40d503 bn41-01702a bn94-04845g"
+    },
+    {
+        "id":  155,
+        "name":  "Samsung Anakart ue40m5000au bn41-02582b bn94-12392d",
+        "category":  "anakart",
+        "price":  "1600",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksa006a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart ue40m5000au bn41-02582b bn94-12392d\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  156,
+        "name":  "Samsung Anakart ps51d550c1w bn41-01632c bn94-04884e",
+        "category":  "anakart",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/oa004a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart ps51d550c1w bn41-01632c bn94-04884e\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  157,
+        "name":  "Samsung Anakart le32s81b bn41-00936c bn94-01731a",
+        "category":  "muhtelif",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a035a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart le32s81b bn41-00936c bn94-01731a\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  158,
+        "name":  "Samsung Anakart le32r71b bn41-00680c bordeaux_mp1.2",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a001a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart le32r71b bn41-00680c bordeaux_mp1.2\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  159,
+        "name":  "Samsung Anakart un43n5300a bn81-17672a vn43fs085u0 ml41a050478a",
+        "category":  "anakart",
+        "price":  "3000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/sam01a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart un43n5300a bn81-17672a vn43fs085u0 ml41a050478a\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  160,
+        "name":  "Samsung Anakart ue49n5300 bn41-02663a bn94-13054z",
+        "category":  "anakart",
+        "price":  "3000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3b005a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart ue49n5300 bn41-02663a bn94-13054z\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  161,
+        "name":  "Samsung Anakart le40d550 bn41-01603c bn94-04509e",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/sam02a.png",
+        "featured":  false,
+        "description":  "Samsung Anakart le40d550 bn41-01603c bn94-04509e\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  162,
+        "name":  "Schaub Lorenz Anakart slp-3232 vpm-0101a4 vcb4631",
+        "category":  "anakart",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a032a.png",
+        "featured":  false,
+        "description":  "Schaub Lorenz Anakart slp-3232 vpm-0101a4 vcb4631\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  163,
+        "name":  "Lg Anakart 42lm640s eax64307910 ebt62151042",
+        "category":  "anakart",
+        "price":  "2000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/c001a.png",
+        "featured":  false,
+        "description":  "Lg Anakart 42lm640s eax64307910 ebt62151042\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  164,
+        "name":  "Lg Anakart 55uf6807 eax66427003 ebt64000102 ebr81239705",
+        "category":  "anakart",
+        "price":  "3000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3b019a.png",
+        "featured":  false,
+        "description":  "Lg Anakart 55uf6807 eax66427003 ebt64000102 ebr81239705\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  165,
+        "name":  "Sony Anakart kdl-32v4210 1-876-638-11 y2008440e",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a044a.png",
+        "featured":  false,
+        "description":  "Sony Anakart kdl-32v4210 1-876-638-11 y2008440e\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  166,
+        "name":  "Sony Anakart kdl-32bx300 1-881-019-32 y2008960c",
+        "category":  "anakart",
+        "price":  "1200",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/kso001a.png",
+        "featured":  false,
+        "description":  "Sony Anakart kdl-32bx300 1-881-019-32 y2008960c\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  167,
+        "name":  "Lg Anakart 42lb580n eax65610905 (1.0) ebr79626301",
+        "category":  "anakart",
+        "price":  "2000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/lg010a.png",
+        "featured":  false,
+        "description":  "Lg Anakart 42lb580n eax65610905 (1.0) ebr79626301\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  168,
+        "name":  "Anakart hk.t.rt2851p839 hv550qub-f70",
+        "category":  "anakart",
+        "price":  "2000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/c010a.png",
+        "featured":  false,
+        "description":  "Anakart hk.t.rt2851p839 ( hv550qub-f70 panel )  (Mosfet Tadilat)\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
+    },
+    {
+        "id":  169,
+        "name":  "Lg Besleme Kart Psu 42lb580n eax65628601 (1.3) rev1.0",
+        "category":  "muhtelif",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a055b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Kart Psu 42lb580n eax65628601 (1.3) rev1.0"
+    },
+    {
+        "id":  170,
+        "name":  "Lg Besleme Psu Kart 42la660s eax64905701 eay62810901",
+        "category":  "muhtelif",
+        "price":  "900",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ob007b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 42la660s eax64905701 eay62810901"
+    },
+    {
+        "id":  171,
+        "name":  "Lg Besleme Psu Kart 42lm640s eax64744204 eay62608903",
+        "category":  "muhtelif",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/bl001b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 42lm640s eax64744204 eay62608903"
+    },
+    {
+        "id":  172,
+        "name":  "Lg Besleme Psu Kart 55lb652v eax65423801 (2.1)",
+        "category":  "muhtelif",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2b001b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 55lb652v eax65423801 (2.1)"
+    },
+    {
+        "id":  173,
+        "name":  "Lg Besleme Psu Kart 50lf650v eax66203101 (1.7) rev 2.0",
+        "category":  "muhtelif",
+        "price":  "900",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/bl005b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 50lf650v eax66203101 (1.7) rev 2.0"
+    },
+    {
+        "id":  174,
+        "name":  "Lg Besleme Psu Kart 42lm615s eax64427101 eay62608901",
+        "category":  "muhtelif",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a056b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 42lm615s eax64427101 eay62608901"
+    },
+    {
+        "id":  175,
+        "name":  "Lg Besleme Psu Kart 49uf8507 eax66306501 eay63788701",
+        "category":  "muhtelif",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2b014b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 49uf8507 eax66306501 eay63788701"
+    },
+    {
+        "id":  176,
+        "name":  "Lg Besleme Psu Kart 42lb582v eax65423701 rev2.0",
+        "category":  "muhtelif",
+        "price":  "900",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a025b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 42lb582v eax65423701 rev2.0"
+    },
+    {
+        "id":  177,
+        "name":  "Lg Besleme Psu Kart 32lk330 eax63985401",
+        "category":  "muhtelif",
+        "price":  "700",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a031b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 32lk330 eax63985401"
+    },
+    {
+        "id":  178,
+        "name":  "Lg Besleme Psu Kart 32ld350 eax61464001",
+        "category":  "muhtelif",
+        "price":  "700",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a045b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 32ld350 eax61464001"
+    },
+    {
+        "id":  179,
+        "name":  "Lg Besleme Psu Kart 32lg3000 eax40097901 eay4050500",
+        "category":  "muhtelif",
+        "price":  "700",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a022b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 32lg3000 eax40097901 eay4050500"
+    },
+    {
+        "id":  180,
+        "name":  "Lg Besleme Psu Kart 42lv375s eax63729001 eay62171601",
+        "category":  "muhtelif",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a019b.png",
+        "featured":  false,
+        "description":  "Lg Besleme Psu Kart 42lv375s eax63729001 eay62171601"
+    },
+    {
+        "id":  181,
+        "name":  "Samsung Besleme Psu Kart ue48h6470 bn44-00709b",
+        "category":  "muhtelif",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2b015b.png",
+        "featured":  false,
+        "description":  "Samsung Besleme Psu Kart ue48h6470 bn44-00709b"
+    },
+    {
+        "id":  182,
+        "name":  "Samsung Besleme Psu Kart ue40c5100 bn44-00353a",
+        "category":  "muhtelif",
+        "price":  "800",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksa005b.png",
+        "featured":  false,
+        "description":  "Samsung Besleme Psu Kart ue40c5100 bn44-00353a"
+    },
+    {
+        "id":  183,
+        "name":  "Samsung Besleme Psu Kart le40d503 bn44-00469b",
+        "category":  "muhtelif",
+        "price":  "700",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a043b.png",
+        "featured":  false,
+        "description":  "Samsung Besleme Psu Kart le40d503 bn44-00469b"
+    },
+    {
+        "id":  184,
+        "name":  "Samsung Besleme Psu Kart le32r71b bn96-03057a",
+        "category":  "muhtelif",
+        "price":  "700",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a001b.png",
+        "featured":  false,
+        "description":  "Samsung Besleme Psu Kart le32r71b bn96-03057a"
+    },
+    {
+        "id":  185,
+        "name":  "Samsung Besleme Psu Kart ue40es6140  bn44-00518b",
+        "category":  "muhtelif",
+        "price":  "700",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ob008b.png",
+        "featured":  false,
+        "description":  "Samsung Besleme Psu Kart ue40es6140 bn44-00518b"
+    },
+    {
+        "id":  186,
+        "name":  "Samsung Besleme Psu Kart ue40m5000au bn44-00852f",
+        "category":  "muhtelif",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksa006b.png",
+        "featured":  false,
+        "description":  "Samsung Besleme Psu Kart ue40m5000au bn44-00852f"
+    },
+    {
+        "id":  187,
+        "name":  "Samsung Besleme Psu Kart ue43mu7000  bn44-00806a rev:1.3",
+        "category":  "muhtelif",
+        "price":  "1000",
+        "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/bsa002b.png",
+        "featured":  false,
+        "description":  "Samsung Besleme Psu Kart ue43mu7000 bn44-00806a rev:1.3"
     }
 ]
