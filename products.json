@@ -1,11 +1,11 @@
-﻿[
+[
     {
         "id":  100,
         "name":  "Sunny SN049DLD12AT050 12AT050 Anakart",
         "category":  "anakart",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a037a-1.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "49 inç 12AT050 ANAKART"
     },
     {
@@ -14,7 +14,7 @@
         "category":  "anakart",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/c004a.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "40-43inc 16AT017 40-43 V1.0 MNL ANAKART"
     },
     {
@@ -23,7 +23,7 @@
         "category":  "anakart",
         "price":  "1200",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksu024a.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "49İNC AX049DLD16AT018 16AT018 V1.1 MNL ANAKART"
     },
     {
@@ -32,7 +32,7 @@
         "category":  "anakart",
         "price":  "1800",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/3a070a.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "50INC 50EX7550 TP.V56.PC821 T500HVN09.0-N2 ANAKART"
     },
     {
@@ -41,7 +41,7 @@
         "category":  "anakart",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a073a-1.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "43INC AX043DLD12AT075 12AT075 ANAKART LC430DUY-SHA1"
     },
     {
@@ -50,7 +50,7 @@
         "category":  "anakart",
         "price":  "800",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksu023a-1.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "SN032LM23-T1 T.MT8223.3B 10234 LTA320AP02"
     },
     {
@@ -518,7 +518,7 @@
         "category":  "muhtelif",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a035a.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Anakart le32s81b bn41-00936c bn94-01731a\n\nölçü bilgisi  35*25*30 max 1000gr\n\nLütfen Panel (Ekran) uyumu İçin Dikkat Ediniz. Bilmiyorsanız Whatsapp Destek Hattı Bilgi Alınız."
     },
     {
@@ -626,7 +626,7 @@
         "category":  "muhtelif",
         "price":  "800",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a055b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Kart Psu 42lb580n eax65628601 (1.3) rev1.0"
     },
     {
@@ -635,7 +635,7 @@
         "category":  "muhtelif",
         "price":  "900",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ob007b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 42la660s eax64905701 eay62810901"
     },
     {
@@ -644,7 +644,7 @@
         "category":  "muhtelif",
         "price":  "800",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/bl001b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 42lm640s eax64744204 eay62608903"
     },
     {
@@ -653,7 +653,7 @@
         "category":  "muhtelif",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2b001b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 55lb652v eax65423801 (2.1)"
     },
     {
@@ -662,7 +662,7 @@
         "category":  "muhtelif",
         "price":  "900",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/bl005b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 50lf650v eax66203101 (1.7) rev 2.0"
     },
     {
@@ -680,7 +680,7 @@
         "category":  "muhtelif",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2b014b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 49uf8507 eax66306501 eay63788701"
     },
     {
@@ -689,7 +689,7 @@
         "category":  "muhtelif",
         "price":  "900",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a025b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 42lb582v eax65423701 rev2.0"
     },
     {
@@ -698,7 +698,7 @@
         "category":  "muhtelif",
         "price":  "700",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a031b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 32lk330 eax63985401"
     },
     {
@@ -707,7 +707,7 @@
         "category":  "muhtelif",
         "price":  "700",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a045b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 32ld350 eax61464001"
     },
     {
@@ -716,7 +716,7 @@
         "category":  "muhtelif",
         "price":  "700",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/1a022b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 32lg3000 eax40097901 eay4050500"
     },
     {
@@ -725,7 +725,7 @@
         "category":  "muhtelif",
         "price":  "800",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a019b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Lg Besleme Psu Kart 42lv375s eax63729001 eay62171601"
     },
     {
@@ -734,7 +734,7 @@
         "category":  "muhtelif",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2b015b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Besleme Psu Kart ue48h6470 bn44-00709b"
     },
     {
@@ -743,7 +743,7 @@
         "category":  "muhtelif",
         "price":  "800",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksa005b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Besleme Psu Kart ue40c5100 bn44-00353a"
     },
     {
@@ -752,7 +752,7 @@
         "category":  "muhtelif",
         "price":  "700",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a043b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Besleme Psu Kart le40d503 bn44-00469b"
     },
     {
@@ -761,7 +761,7 @@
         "category":  "muhtelif",
         "price":  "700",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/2a001b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Besleme Psu Kart le32r71b bn96-03057a"
     },
     {
@@ -770,7 +770,7 @@
         "category":  "muhtelif",
         "price":  "700",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ob008b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Besleme Psu Kart ue40es6140 bn44-00518b"
     },
     {
@@ -779,7 +779,7 @@
         "category":  "muhtelif",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/ksa006b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Besleme Psu Kart ue40m5000au bn44-00852f"
     },
     {
@@ -788,7 +788,7 @@
         "category":  "muhtelif",
         "price":  "1000",
         "image":  "https://ergenledtv.com/wp-content/uploads/2024/06/bsa002b.png",
-        "featured":  false,
+        "featured":  true,
         "description":  "Samsung Besleme Psu Kart ue43mu7000 bn44-00806a rev:1.3"
     }
 ]
