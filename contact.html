@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Ergen Led Tv Elektronik</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-icon {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 4px;
+            font-family: var(--font-body);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .bank-details {
+            background-color: var(--bg-surface);
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Ergen <span style="color:white">Led Tv</span></a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html">Ürünler</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="contact.html" class="active">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero"
+        style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://placehold.co/1920x600/1a1a1a/333333?text=Contact+Us');">
+        <div class="hero-content">
+            <h1>İletişim</h1>
+            <p>Bize Ulaşın</p>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 0 20px 4rem;">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div>
+                <h2 style="color: var(--accent-gold); margin-bottom: 2rem;">Adres Bilgileri</h2>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div>
+                        <h4>Adres</h4>
+                        <p style="color: var(--text-secondary);">Cumhuriyet Mah. Turgut Özal Bulvarı No:123<br>Merkez /
+                            BATMAN</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p style="color: var(--text-secondary);">+90 500 000 00 00</p>
+                        <p style="color: var(--text-secondary);">+90 488 000 00 00</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <h4>E-Posta</h4>
+                        <p style="color: var(--text-secondary);">info@ergenledtv.com</p>
+                    </div>
+                </div>
+
+                <div class="bank-details">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Banka Hesap Bilgileri</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Banka:</strong> Ziraat
+                        Bankası</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Alıcı:</strong> Ergen
+                        Elektronik Ltd. Şti.</p>
+                    <p style="color: var(--text-secondary);"><strong>IBAN:</strong> TR00 0000 0000 0000 0000 0000 00</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <h2 style="color: var(--accent-gold); margin-bottom: 2rem;">İletişim Formu</h2>
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Mesajınız gönderildi!');">
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom: 0.5rem;">Adınız Soyadınız</label>
+                        <input type="text" class="form-control" placeholder="Adınız">
+                    </div>
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom: 0.5rem;">E-Posta Adresi</label>
+                        <input type="email" class="form-control" placeholder="email@ornek.com">
+                    </div>
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom: 0.5rem;">Konu</label>
+                        <input type="text" class="form-control" placeholder="Mesajınızın konusu">
+                    </div>
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom: 0.5rem;">Mesajınız</label>
+                        <textarea class="form-control" placeholder="Mesajınızı buraya yazın..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%;">Mesajı
+                        Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section
+        style="height: 400px; background-color: #262626; display: flex; align-items: center; justify-content: center;">
+        <p style="color: #555; font-size: 1.5rem;">Google Maps Placeholder</p>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p style="text-align: center; color: var(--text-secondary);">&copy; 2026 Ergen Led Tv Elektronik</p>
+            <div class="footer-links" style="text-align: center;">
+                <a href="#" id="footerCookieLink">Çerez Politikası</a> |
+                <a href="#">Gizlilik ve Güvenlik</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905000000000" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"
+            style="font-size: 2rem;"></i></a>
+    <script src="script.js"></script>
+</body>
+
+</html>

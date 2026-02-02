@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetim Paneli - Ergen Led Tv</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-sidebar {
+            width: 280px;
+            background: var(--bg-surface);
+            border-right: 1px solid var(--border-color);
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 2rem;
+            z-index: 100;
+        }
+
+        .admin-main {
+            margin-left: 280px;
+            padding: 4rem 2rem;
+        }
+
+        .dashboard-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .product-table th,
+        .product-table td {
+            text-align: left;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .product-table tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .login-overlay {
+            position: fixed;
+            inset: 0;
+            background: var(--bg-primary);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(20px);
+        }
+
+        .login-box {
+            background: var(--bg-surface);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--accent-gold);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .btn-delete {
+            color: #ff4444;
+            background: transparent;
+            border: 1px solid #ff4444;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-delete:hover {
+            background: #ff4444;
+            color: white;
+        }
+
+        .admin-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            color: var(--text-secondary);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .admin-nav-item:hover,
+        .admin-nav-item.active {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--accent-gold);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .admin-sidebar {
+                width: 0;
+                overflow: hidden;
+                padding: 0;
+            }
+
+            .admin-main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Login Overlay -->
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-box">
+            <h2 style="color: var(--accent-gold);">Yönetici Girişi</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-secondary);">Ergen Led Tv Panel</p>
+            <input type="password" id="adminPass" class="form-control" placeholder="Şifrenizi Girin"
+                style="margin-bottom: 1rem; text-align: center;">
+            <button id="loginBtn" class="btn-primary" style="width: 100%;">Giriş Yap</button>
+            <p id="errorMsg" style="color: #ff4444; margin-top: 1rem; display: none;">Hatalı Şifre!</p>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="admin-sidebar">
+        <div class="logo" style="margin-bottom: 2rem;">Ergen <span style="color: white;">Admin</span></div>
+        <div class="admin-nav-item active" onclick="showTab('products')"><i class="fas fa-box"></i> Ürün Yönetimi</div>
+        <div class="admin-nav-item" onclick="showTab('categories')"><i class="fas fa-tags"></i> Kategori Yönetimi</div>
+        <a href="index.html" class="admin-nav-item"><i class="fas fa-external-link-alt"></i> Siteye Git</a>
+        <div id="logoutBtn" class="admin-nav-item" style="margin-top: auto; color: #ff4444;"><i
+                class="fas fa-sign-out-alt"></i> Çıkış</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="admin-main">
+
+        <!-- Products Tab -->
+        <div id="productsTab" class="tab-content active">
+            <header
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; background: transparent; position: relative; border: none;">
+                <h1>Ürün Yönetimi</h1>
+                <button onclick="toggleForm('productForm')" class="btn-primary"><i class="fas fa-plus"></i> Yeni Ürün
+                    Ekle</button>
+            </header>
+
+            <div id="productForm" class="dashboard-card" style="display: none;">
+                <h3 style="margin-bottom: 1.5rem;">Ürün Detayları</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Ürün Adı</label>
+                        <input type="text" id="pName" class="form-control" placeholder="Örn: Samsung Anakart">
+                    </div>
+                    <div class="form-group">
+                        <label>Fiyat (₺)</label>
+                        <input type="number" id="pPrice" class="form-control" placeholder="Örn: 2450">
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori</label>
+                        <select id="pCategory" class="form-control">
+                            <!-- JS ile doldurulacak -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Resim URL (Dış Bağlantı)</label>
+                        <input type="text" id="pImage" class="form-control" placeholder="https://...">
+                    </div>
+                    <div class="form-group" style="grid-column: span 2;">
+                        <label><input type="checkbox" id="pFeatured"> Ana Sayfada Göster (Öne Çıkan)</label>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <button onclick="addProduct()" class="btn-primary">Kaydet</button>
+                    <button onclick="toggleForm('productForm')" class="btn-reject">Vazgeç</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Mevcut Ürünler</h3>
+                    <button onclick="saveData('products')" class="btn-primary"
+                        style="background: #25D366; border-color: #25D366; color: white;">
+                        <i class="fas fa-cloud-upload-alt"></i> Ürünleri Sunucuya Kaydet
+                    </button>
+                </div>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Görsel</th>
+                            <th>İsim</th>
+                            <th>Kategori</th>
+                            <th>Fiyat</th>
+                            <th>Durum</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Categories Tab -->
+        <div id="categoriesTab" class="tab-content">
+            <header
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; background: transparent; position: relative; border: none;">
+                <h1>Kategori Yönetimi</h1>
+                <button onclick="toggleForm('categoryForm')" class="btn-primary"><i class="fas fa-plus"></i> Yeni
+                    Kategori Ekle</button>
+            </header>
+
+            <div id="categoryForm" class="dashboard-card" style="display: none;">
+                <h3 style="margin-bottom: 1.5rem;">Kategori Detayları</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Kategori Adı</label>
+                        <input type="text" id="cName" class="form-control" placeholder="Örn: Panel">
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori ID (Küçük harf, boşluksuz)</label>
+                        <input type="text" id="cId" class="form-control" placeholder="Örn: panel">
+                    </div>
+                </div>
+                <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <button onclick="addCategory()" class="btn-primary">Kaydet</button>
+                    <button onclick="toggleForm('categoryForm')" class="btn-reject">Vazgeç</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Mevcut Kategoriler</h3>
+                    <button onclick="saveData('categories')" class="btn-primary"
+                        style="background: #25D366; border-color: #25D366; color: white;">
+                        <i class="fas fa-cloud-upload-alt"></i> Kategorileri Sunucuya Kaydet
+                    </button>
+                </div>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Kategori Adı</th>
+                            <th>Kategori ID</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody id="categoryTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Tab Management ---
+        const showTab = (tabName) => {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.admin-nav-item').forEach(item => item.classList.remove('active'));
+
+            document.getElementById(tabName + 'Tab').classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // --- Authentication ---
+        const loginBtn = document.getElementById('loginBtn');
+        const adminPass = document.getElementById('adminPass');
+        const loginOverlay = document.getElementById('loginOverlay');
+        const errorMsg = document.getElementById('errorMsg');
+
+        const checkAuth = () => {
+            if (sessionStorage.getItem('adminAuth') === 'true') {
+                loginOverlay.style.display = 'none';
+            }
+        }
+
+        loginBtn.addEventListener('click', () => {
+            if (adminPass.value === 'ergen123') {
+                sessionStorage.setItem('adminAuth', 'true');
+                loginOverlay.style.display = 'none';
+            } else {
+                errorMsg.style.display = 'block';
+            }
+        });
+        checkAuth();
+
+        // --- Data Management ---
+        let products = [];
+        let categories = [];
+
+        const loadData = async () => {
+            try {
+                const [pRes, cRes] = await Promise.all([
+                    fetch('products.json'),
+                    fetch('categories.json')
+                ]);
+                products = await pRes.json();
+                categories = await cRes.json();
+                renderAll();
+            } catch (e) {
+                console.error('Veri yüklenemedi');
+            }
+        }
+
+        const renderAll = () => {
+            renderProductTable();
+            renderCategoryTable();
+            updateCategoryDropdown();
+        }
+
+        const renderProductTable = () => {
+            const body = document.getElementById('productTableBody');
+            body.innerHTML = products.map((p, index) => {
+                const cat = categories.find(c => c.id === p.category);
+                return `
+                <tr>
+                    <td><img src="${p.image}" width="50" style="border-radius: 4px;"></td>
+                    <td>${p.name}</td>
+                    <td class="text-uppercase">${cat ? cat.name : p.category}</td>
+                    <td>₺${parseFloat(p.price).toLocaleString('tr-TR')}</td>
+                    <td>${p.featured ? '<span style="color:var(--accent-gold)"><i class="fas fa-star"></i> Öne Çıkan</span>' : 'Standart'}</td>
+                    <td>
+                        <button onclick="deleteItem('products', ${index})" class="btn-delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+            `}).join('');
+        }
+
+        const renderCategoryTable = () => {
+            const body = document.getElementById('categoryTableBody');
+            body.innerHTML = categories.map((c, index) => `
+                <tr>
+                    <td>${c.name}</td>
+                    <td><code>${c.id}</code></td>
+                    <td>
+                        <button onclick="deleteItem('categories', ${index})" class="btn-delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        const updateCategoryDropdown = () => {
+            const select = document.getElementById('pCategory');
+            select.innerHTML = categories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+        }
+
+        const toggleForm = (formId) => {
+            const form = document.getElementById(formId);
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+
+        const addProduct = () => {
+            const newProduct = {
+                id: Date.now(),
+                name: document.getElementById('pName').value,
+                price: document.getElementById('pPrice').value,
+                category: document.getElementById('pCategory').value,
+                image: document.getElementById('pImage').value || 'https://placehold.co/400x300?text=No+Image',
+                featured: document.getElementById('pFeatured').checked,
+                description: ""
+            };
+            if (!newProduct.name || !newProduct.price) return alert('Lütfen zorunlu alanları doldurun.');
+            products.push(newProduct);
+            renderProductTable();
+            toggleForm('productForm');
+            alert('Ürün listeye eklendi. "Sunucuya Kaydet" butonuna basmayı unutmayın.');
+        }
+
+        const addCategory = () => {
+            const name = document.getElementById('cName').value;
+            const id = document.getElementById('cId').value.toLowerCase().replace(/\s/g, '');
+            if (!name || !id) return alert('Lütfen zorunlu alanları doldurun.');
+            if (categories.some(c => c.id === id)) return alert('Bu ID zaten kullanımda.');
+
+            categories.push({ id, name });
+            renderAll();
+            toggleForm('categoryForm');
+            alert('Kategori eklendi. "Sunucuya Kaydet" butonuna basmayı unutmayın.');
+        }
+
+        const deleteItem = (type, index) => {
+            if (confirm('Silmek istediğinize emin misiniz?')) {
+                if (type === 'products') products.splice(index, 1);
+                else categories.splice(index, 1);
+                renderAll();
+            }
+        }
+
+        const saveData = async (type) => {
+            const data = (type === 'products') ? products : categories;
+            try {
+                const response = await fetch('save_products.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ type, data })
+                });
+                const res = await response.json();
+                if (res.status === 'success') alert(type.toUpperCase() + ' başarıyla kaydedildi!');
+                else alert('Hata: ' + res.message);
+            } catch (e) {
+                alert('Bağlantı Hatası: Hostinger\'a yüklediğinizde bu özellik aktif olacaktır.');
+            }
+        }
+
+        loadData();
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            sessionStorage.removeItem('adminAuth');
+            location.reload();
+        });
+    </script>
+</body>
+
+</html>

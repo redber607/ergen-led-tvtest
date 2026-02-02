@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler | Ergen Led Tv Elektronik</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Ergen <span style="color:white">Led Tv</span></a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html" class="active">Ürünler</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-mini">
+        <div class="hero-content">
+            <h1>Ürün Kataloğu</h1>
+            <p>Kaliteli ve Garantili Yedek Parçalar</p>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="homeSearchInput" class="search-input" placeholder="Bu sayfada ara...">
+                <button id="homeSearchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <div class="container">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Tümü</button>
+            <button class="filter-btn" data-filter="anakart">Anakart</button>
+            <button class="filter-btn" data-filter="besleme">Besleme Kart</button>
+            <button class="filter-btn" data-filter="tcon">T-Con Kart</button>
+            <button class="filter-btn" data-filter="muhtelif">Muhtelif</button>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="container" style="margin-bottom: 4rem;">
+        <div id="productsGrid" class="grid">
+            <!-- JS ile doldurulacak -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Ergen Led Tv Elektronik</p>
+                <div class="footer-links">
+                    <a href="#" id="footerCookieLink">Çerez Politikası</a> |
+                    <a href="#">Gizlilik ve Güvenlik</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905000000000" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"
+            style="font-size: 2rem;"></i></a>
+    <script src="script.js"></script>
+</body>
+
+</html>

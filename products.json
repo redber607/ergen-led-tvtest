@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "LG 42\" Led Bar Takımı",
+        "category": "muhtelif",
+        "price": "850.00",
+        "image": "assets/images/products/led_bar.png",
+        "featured": true,
+        "description": "Garantili ve orijinal Led Bar takımı."
+    },
+    {
+        "id": 2,
+        "name": "Samsung UE55 Anakart",
+        "category": "anakart",
+        "price": "2450.00",
+        "image": "assets/images/products/mainboard.png",
+        "featured": true,
+        "description": "Smart TV uyumlu orijinal anakart."
+    },
+    {
+        "id": 3,
+        "name": "Vestel 17IPS Besleme Kartı",
+        "category": "besleme",
+        "price": "750.00",
+        "image": "assets/images/products/power_board.png",
+        "featured": true,
+        "description": "Sık arıza yapan modeller için güçlendirilmiş versiyon."
+    },
+    {
+        "id": 4,
+        "name": "LG 42\" Smart Anakart",
+        "category": "anakart",
+        "price": "1850.00",
+        "image": "assets/images/products/mainboard.png",
+        "featured": false,
+        "description": "Tüm LG 42 serisi ile uyumlu."
+    },
+    {
+        "id": 5,
+        "name": "Philips 50\" PSU Kart",
+        "category": "besleme",
+        "price": "950.00",
+        "image": "assets/images/products/power_board.png",
+        "featured": false,
+        "description": "Yüksek voltaj korumalı güç kartı."
+    },
+    {
+        "id": 6,
+        "name": "AUO T-Con Modül",
+        "category": "tcon",
+        "price": "450.00",
+        "image": "assets/images/products/mainboard.png",
+        "featured": false,
+        "description": "Ekran dikey çizgi arızaları için çözüm."
+    },
+    {
+        "id": 7,
+        "name": "Üniversal Led Bar",
+        "category": "muhtelif",
+        "price": "350.00",
+        "image": "assets/images/products/led_bar.png",
+        "featured": false,
+        "description": "Her modele kesilerek uyarlanabilir."
+    }
+]

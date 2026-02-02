@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual View Previewer - Ergen Led Tv</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #0f1115;
+            --bg-card: #1c1f26;
+            --accent-gold: #d4af37;
+            --text-primary: #e5e5e5;
+            --text-secondary: #a0a0a0;
+            --glass-bg: rgba(28, 31, 38, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            height: 60px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            z-index: 100;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background: var(--glass-border);
+            border-color: var(--accent-gold);
+        }
+
+        .btn.active {
+            background: var(--accent-gold);
+            color: black;
+            border-color: var(--accent-gold);
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            overflow: hidden;
+        }
+
+        .view-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .view-header {
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .view-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .iframe-wrapper {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: #fff;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Mobile View Specific */
+        .mobile-view {
+            max-width: 450px;
+            background: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .device-frame {
+            position: relative;
+            width: 375px;
+            height: 812px;
+            background: #111;
+            border: 12px solid #333;
+            border-radius: 40px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transform: scale(0.9);
+            transform-origin: center top;
+        }
+
+        .device-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 25px;
+            background: #333;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 10;
+        }
+
+        /* Status Bar */
+        .status-bar {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: var(--glass-bg);
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid var(--glass-border);
+            font-size: 0.8rem;
+            z-index: 10;
+        }
+
+        @media (max-width: 1200px) {
+            main {
+                flex-direction: column;
+                overflow-y: auto;
+            }
+
+            .mobile-view {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-desktop"></i>
+            <span>DUAL VIEW <span style="color: var(--text-primary)">PREVIEWER</span></span>
+        </a>
+        <div class="controls">
+            <button class="btn active" onclick="changePage('index.html')">Home</button>
+            <button class="btn" onclick="changePage('products.html')">Products</button>
+            <button class="btn" onclick="changePage('about.html')">About</button>
+            <button class="btn" onclick="changePage('contact.html')">Contact</button>
+            <button class="btn" onclick="changePage('admin.html')" style="border-color: #ff4444; color: #ff4444;">Admin
+                Panel</button>
+            <button class="btn" onclick="toggleSync()" title="Sync Scroll (Beta)">
+                <i class="fas fa-sync"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Desktop View -->
+        <div class="view-container">
+            <div class="view-header">
+                <span class="view-title">Desktop View (100%)</span>
+                <span id="desktopRes" style="font-size: 0.7rem; color: var(--text-secondary)">Fluid Width</span>
+            </div>
+            <div class="iframe-wrapper">
+                <iframe id="desktopIframe" src="index.html"></iframe>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="view-container mobile-view">
+            <div class="device-frame">
+                <div class="device-notch"></div>
+                <iframe id="mobileIframe" src="index.html"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const desktopIframe = document.getElementById('desktopIframe');
+        const mobileIframe = document.getElementById('mobileIframe');
+        const buttons = document.querySelectorAll('.controls .btn');
+
+        function changePage(page) {
+            desktopIframe.src = page;
+            mobileIframe.src = page;
+
+            buttons.forEach(btn => {
+                if (btn.innerText.toLowerCase() === page.split('.')[0]) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        // Sync scrolling (requires same domain)
+        let isSyncing = false;
+        function toggleSync() {
+            isSyncing = !isSyncing;
+            const syncBtn = document.querySelector('.fa-sync').parentElement;
+            syncBtn.classList.toggle('active');
+
+            if (isSyncing) {
+                desktopIframe.contentWindow.onscroll = () => {
+                    mobileIframe.contentWindow.scrollTo(0, desktopIframe.contentWindow.scrollY);
+                };
+                mobileIframe.contentWindow.onscroll = () => {
+                    desktopIframe.contentWindow.scrollTo(0, mobileIframe.contentWindow.scrollY);
+                };
+            } else {
+                desktopIframe.contentWindow.onscroll = null;
+                mobileIframe.contentWindow.onscroll = null;
+            }
+        }
+    </script>
+</body>
+
+</html>
