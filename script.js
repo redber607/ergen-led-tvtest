@@ -17,6 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Helper: Normalize strings for Turkish search
+    const trNormalize = (str) => {
+        if (!str) return "";
+        return str.toString()
+            .replace(/İ/g, "i")
+            .replace(/I/g, "ı")
+            .toLowerCase()
+            .replace(/ğ/g, "g")
+            .replace(/ü/g, "u")
+            .replace(/ş/g, "s")
+            .replace(/ö/g, "o")
+            .replace(/ç/g, "c")
+            .trim();
+    };
+
     // --- Product & Category Management Logic ---
     let allProducts = [];
     let allCategories = [];
@@ -218,19 +233,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filterProducts = (filterValue, isSearch = false) => {
         const productCards = document.querySelectorAll('.product-card');
+        const normalizedFilter = trNormalize(filterValue);
+
         productCards.forEach(card => {
             let shouldShow = false;
-            const title = card.querySelector('.card-title').textContent.toLowerCase();
-            const category = card.getAttribute('data-category').toLowerCase();
 
             if (isSearch) {
-                if (title.includes(filterValue) || category.includes(filterValue)) shouldShow = true;
+                const title = trNormalize(card.querySelector('.card-title').textContent);
+                const category = trNormalize(card.getAttribute('data-category'));
+                const description = trNormalize(allProducts.find(p => p.id == card.querySelector('a').href.split('id=')[1])?.description || "");
+
+                if (title.includes(normalizedFilter) ||
+                    category.includes(normalizedFilter) ||
+                    description.includes(normalizedFilter)) {
+                    shouldShow = true;
+                }
             } else {
                 const cardCategory = card.getAttribute('data-category');
                 if (filterValue === 'all' || cardCategory === filterValue) shouldShow = true;
             }
             card.style.display = shouldShow ? 'block' : 'none';
         });
+
+        // Update results message for products page
+        if (isSearch && window.location.pathname.includes('products.html')) {
+            const heroTitle = document.querySelector('.hero-content h1');
+            const visibleCount = Array.from(productCards).filter(c => c.style.display !== 'none').length;
+            if (heroTitle) {
+                heroTitle.innerHTML = `${visibleCount} Sonuç Bulundu: "<span style="color:var(--accent-gold)">${filterValue}</span>"`;
+            }
+        }
     };
 
     // --- Event Listeners ---
@@ -244,16 +276,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const query = homeSearchInput.value.trim();
             if (query) {
                 if (window.location.pathname.includes('products.html')) {
-                    filterProducts(query.toLowerCase(), true);
-                    const heroTitle = document.querySelector('.hero-content h1');
-                    if (heroTitle) heroTitle.innerHTML = `Arama Sonuçları: "<span style="color:var(--accent-gold)">${query}</span>"`;
+                    filterProducts(query, true);
                 } else {
                     window.location.href = `products.html?search=${encodeURIComponent(query)}`;
                 }
             }
         };
+
         homeSearchBtn.addEventListener('click', doSearch);
         homeSearchInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') doSearch(); });
+
+        // Live Search logic
+        homeSearchInput.addEventListener('input', () => {
+            if (window.location.pathname.includes('products.html')) {
+                filterProducts(homeSearchInput.value.trim(), true);
+            }
+        });
     }
 
     document.addEventListener('click', (e) => {
